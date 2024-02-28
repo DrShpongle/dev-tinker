@@ -1,9 +1,25 @@
-import Image from 'next/image'
+import * as React from 'react'
+import Link from 'next/link'
 
-export default function Home() {
+export default function Page() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      main
+    <main className="pt-20">
+      <div className="container mx-auto max-w-screen-lg">
+        <div className="grid grid-cols-2 gap-6">
+          <Link
+            href="/url-decode-and-encode"
+            className="rounded-2xl border bg-gray-100 p-5 duration-150 hover:bg-gray-200"
+          >
+            Url Decode and Encode
+          </Link>
+          <Link
+            href="/url-slugify"
+            className="rounded-2xl border bg-gray-100 p-5 duration-150 hover:bg-gray-200"
+          >
+            Url Slugify
+          </Link>
+        </div>
+      </div>
     </main>
   )
 }
