@@ -4,6 +4,7 @@ import {Inter} from 'next/font/google'
 
 import {Providers} from '@/providers'
 import ThemeSwitch from '@/components/theme-switch'
+import {Toaster} from '@/components/ui/toaster'
 
 import './globals.css'
 
@@ -34,6 +35,7 @@ export default function RootLayout({
             </header>
             <div className="grow">{children}</div>
           </div>
+          <Toaster />
         </Providers>
       </body>
     </html>
