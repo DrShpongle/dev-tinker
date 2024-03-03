@@ -8,9 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: siteConfig.url,
-    title: siteConfig.name,
-    description: siteConfig.description,
+    url: `${siteConfig.url}url-slugify`,
     siteName: siteConfig.name,
     images: [
       {
