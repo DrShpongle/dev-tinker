@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 
-const IMAGE_HOST_DOMAINS = ['fakeimg.pl']
+const IMAGE_HOST_DOMAINS = ['fakeimg.pl', 'res.cloudinary.com']
 
 const nextConfig = {
   images: {
