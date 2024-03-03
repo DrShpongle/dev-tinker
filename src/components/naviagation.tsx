@@ -9,16 +9,12 @@ import ThemeSwitch from '@/components/theme-switch'
 
 const Navigation = () => {
   const [mounted, setMounted] = React.useState(false)
-  const {theme, setTheme} = useTheme()
+  const {theme} = useTheme()
 
   React.useEffect(() => {
     setMounted(true)
   }, [])
 
-  // if (!mounted) {
-  //   return null
-  // }
-  console.log({theme})
   return (
     <header>
       <div className="container mx-auto max-w-screen-lg">

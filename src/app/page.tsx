@@ -18,7 +18,11 @@ export default function Page() {
         <div className="grid grid-cols-3 gap-6">
           {apps.map((app) => {
             return (
-              <Link href={app.href} className="duration-200 hover:scale-105">
+              <Link
+                key={`app-${app.title}`}
+                href={app.href}
+                className="duration-200 hover:scale-105"
+              >
                 <Card>
                   <CardContent className="pt-6">
                     <Image
