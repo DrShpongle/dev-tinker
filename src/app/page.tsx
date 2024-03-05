@@ -14,8 +14,9 @@ import {
 export default function Page() {
   return (
     <main className="pt-20">
+      <h1 className="mb-20 text-center text-4xl font-bold">Web Tinker</h1>
       <div className="container mx-auto max-w-screen-lg">
-        <div className="grid grid-cols-3 gap-6">
+        <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
           {apps.map((app) => {
             return (
               <Link
@@ -23,7 +24,7 @@ export default function Page() {
                 href={app.href}
                 className="duration-200 hover:scale-105"
               >
-                <Card>
+                <Card className="h-full">
                   <CardContent className="pt-6">
                     <Image
                       src={app.image}
